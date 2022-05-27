@@ -21,7 +21,22 @@ var server = http.createServer(function(request, response) {
                 }  
             });  
             break;
-            case '/css/style.css':  
+            case '/css/size.css':  
+            fs.readFile(__dirname + path, function(error, data) {  
+                if (error) {  
+                    response.writeHead(404);  
+                    response.write(error);  
+                    response.end();  
+                } else {  
+                    response.writeHead(200, {  
+                        'Content-Type': 'text/css'  
+                    });  
+                    response.write(data);  
+                    response.end();  
+                }  
+            });  
+            break;
+            case '/css/color.css':  
             fs.readFile(__dirname + path, function(error, data) {  
                 if (error) {  
                     response.writeHead(404);  
