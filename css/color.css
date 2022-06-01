@@ -5,6 +5,9 @@ header{
     background-color: #03A9F4;
     color: #ffffff;
 }
+noscript{
+    color: red;
+}
 .info{
     background-color: #43A047;
     color: #ffffff;
