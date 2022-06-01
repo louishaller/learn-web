@@ -5,3 +5,17 @@ header{
     background-color: #03A9F4;
     color: #ffffff;
 }
+.info{
+    background-color: #43A047;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+.info a{
+    color: #ffffff;
+    transition-duration: 300ms;
+}
+.info a:hover{
+    color: #1B5E20;
+}
